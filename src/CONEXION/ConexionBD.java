@@ -32,6 +32,8 @@ public class ConexionBD {
         ConexionBD.login = datos.getUsuario();
         ConexionBD.password = datos.getPassword();        
         try {
+            errorSql = "";
+            codSql = 0;
             cadenaConexion = String.format("jdbc:oracle:thin:@%s:%s:xe",host, port);
             DriverManager.registerDriver (new oracle.jdbc.driver.OracleDriver());
             con = DriverManager.getConnection(cadenaConexion, login, password);

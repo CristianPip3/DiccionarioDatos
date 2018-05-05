@@ -28,7 +28,12 @@ public class Logica {
         Dba dba = new Dba();
         System.out.println("Logica");
         dba.registroConexion(datosConexion);
+        this.almacenarDatosConexion(datosConexion);
         
+        
+    }
+    private void almacenarDatosConexion(DatosConexion conexion){
+        //Registrar en un archivo, escribir los datos de conexión
     }
 
   
